@@ -1,5 +1,17 @@
-
+html{
+	font-family:'Alfa+Slab+One'， cursive;
+	font-size: 1.2rem;
+}
 
 body {
+	padding: 3rem;
   background-color: rgb(159, 220, 56);
+
+* + *{
+	margin-block-start: 1rem;
 }
+
+
+
+}
+
