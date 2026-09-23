@@ -3,19 +3,25 @@ html{
 	font-size: 1.2rem;
 }
 
-body {
-	padding: 4rem;
-  background-color: rgb(159, 220, 56);
+	body {
+		padding: 4rem;
+	background-color: rgb(253, 255, 236);
 
-* + *{
-	margin-block-start: 1rem;
-}
-  h1{
-	font-family: 'Alfa+Slab+One';
-	font-size: 5rem;
-  }
+	* + *{
+		margin-block-start: 1rem;
+	}
+	h1,h2{
+		font-family: 'Alfa+Slab+One';
+		font-size: 5rem;
+	}
 
+	h2{
+		font-family: 'Alfa+Slab+One';
+	}
 
+	h3{
+		font-family: 'Alfa+Slab+One';
+	}
 
 
 
