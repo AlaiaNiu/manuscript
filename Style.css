@@ -4,12 +4,18 @@ html{
 }
 
 body {
-	padding: 3rem;
+	padding: 4rem;
   background-color: rgb(159, 220, 56);
 
 * + *{
 	margin-block-start: 1rem;
 }
+  h1{
+	font-family: 'Alfa+Slab+One';
+	font-size: 5rem;
+  }
+
+
 
 
 
