@@ -1,15 +1,31 @@
 html{
 	font-family: 'Open Sans',sans-serif;
 	font-size: 1.2rem;
-	line-height: 1.8rem;
+	line-height: 2rem;
 }
 
 	body {
-		padding: 6rem;
+		padding: 8rem;
 	background-color: rgb(253, 255, 236);
 
 	* + *{
 		margin-block-start: 1rem;
+	}
+
+	.article-header{
+		text-align: center;
+		margin: 3rem;
+	}
+
+	.article-header h1 {
+		font-size: clamp(2.5rem,5rem);
+	}
+
+
+	.subtitle{
+		font-size: 1rem;
+		color: hotpink;
+		margin-top: 1.5rem;
 	}
 
 	h1,h2{
@@ -22,12 +38,28 @@ html{
 	}
 
 	h2{
-		font-size: 3rem;
+		font-size: 2.5rem;
+		color: crimson;
+	}
+
+	h3{
+		font-size: 1.3rem;
 		color: crimson;
 	}
 
 	.red-word {
   		color: crimson;
+	}
+
+	.time{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+		font-size: 2rem;
+		& span {
+    	margin-block-start: 0;
+  		}
 	}
 
 	a{
@@ -37,12 +69,13 @@ html{
 
 	em{
 		font-style: italic;
-		color: blueviolet;
+		color: hotpink;
 	}
 
 	.highlights {
   		color:azure;
   		background-color: rgb(103, 181, 254);
+		padding: 0.4rem 1rem;
 
 		em{
 			color: blue;
