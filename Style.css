@@ -1,28 +1,54 @@
 html{
-	font-family:'Alfa+Slab+One'， cursive;
+	font-family: 'Open Sans',sans-serif;
 	font-size: 1.2rem;
+	line-height: 1.8rem;
 }
 
 	body {
-		padding: 4rem;
+		padding: 6rem;
 	background-color: rgb(253, 255, 236);
 
 	* + *{
 		margin-block-start: 1rem;
 	}
+
 	h1,h2{
-		font-family: 'Alfa+Slab+One';
+		font-family: 'Alfa Slab One', cursive;
+		line-height: 6rem;
+	}
+
+	h1{
 		font-size: 5rem;
 	}
 
 	h2{
-		font-family: 'Alfa+Slab+One';
+		font-size: 3rem;
+		color: crimson;
 	}
 
-	h3{
-		font-family: 'Alfa+Slab+One';
+	.red-word {
+  		color: crimson;
 	}
 
+	a{
+		color: dodgerblue;
+		text-decoration: underline;
+	}
+
+	em{
+		font-style: italic;
+		color: blueviolet;
+	}
+
+	.highlights {
+  		color:azure;
+  		background-color: rgb(103, 181, 254);
+
+		em{
+			color: blue;
+			font-weight: 300;
+		}
+	}
 
 
 }
