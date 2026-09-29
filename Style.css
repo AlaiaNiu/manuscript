@@ -1,7 +1,8 @@
 :root {
     --main-color: #2c3e50;
     --bg-color: rgb(253, 255, 236);
-    --font-body: 'Open Sans', sans-serif;
+    --font-heading: 'source serif 4', serif;
+	--font-body:'DM Sans', sans-serif;
 }
 
 html{
@@ -14,6 +15,7 @@ html{
 		padding: 8rem;
 	background-color: rgb(253, 255, 236);
 
+	/* 之后要删掉这个spacing，修改 */
 	* + *{
 		margin-block-start: 1rem;
 	}
@@ -34,17 +36,19 @@ html{
 		margin-top: 1.5rem;
 	}
 
-	h1,h2{
-		font-family: 'Alfa Slab One', cursive;
+	h1,h2,h3{
+		font-family: var(--font-heading), sans-serif;
 		line-height: 6rem;
 	}
 
 	h1{
-		font-size: 1rem;
+		font-size: 0.5rem;
+		font-weight: 100;
 	}
 
 	h2{
 		font-size: 5rem;
+		font-weight: 700;
 		color: crimson;
 	}
 
