@@ -1,6 +1,16 @@
 :root {
-    --main-color: #2c3e50;
-    --bg-color: rgb(253, 255, 236);
+    --color-fg: #2c3e50;
+    --color-bg: rgb(253, 255, 236);
+	--color-brand:crimson;
+    --color-accent: firebrick;
+
+	--size-small:1.2rem;
+	--size-medium:2rem;
+	--size-large:8rem;
+
+
+	color: var(--color-fg);
+	background-color: var(--color-bg);
     --font-heading: 'source serif 4', serif;
 	--font-body:'DM Sans', sans-serif;
 }
@@ -12,13 +22,18 @@ html{
 }
 
 	body {
-		padding: 8rem;
-	background-color: rgb(253, 255, 236);
-
-	/* 之后要删掉这个spacing，修改 */
-	* + *{
-		margin-block-start: 1rem;
+		padding: var(--size-large);
+		background-color: var(--color-bg);
 	}
+
+	section{
+		max-inline-size: 40ch;
+	}
+
+	section > * + *{
+		margin-block-start: var(--size-small);
+	}
+
 
 	.article-header{
 		text-align: center;
@@ -36,13 +51,23 @@ html{
 		margin-top: 1.5rem;
 	}
 
-	h1,h2,h3{
+	.pull-quote{
+		padding-inline-start: 5rem;
+	}
+
+	.response-title{
+		font-size: 3rem;
+		color: rgb(97, 94, 91);
+	}
+
+	h1,h2,h3,h4{
 		font-family: var(--font-heading), sans-serif;
 		line-height: 6rem;
+		color:var(--color-brand)
 	}
 
 	h1{
-		font-size: 0.5rem;
+		font-size: 1rem;
 		font-weight: 100;
 	}
 
@@ -53,8 +78,13 @@ html{
 	}
 
 	h3{
-		font-size: 1.3rem;
+		font-size: 3rem;
 		color: crimson;
+		margin-block: var(--size-large)var(--size-medium);
+	}
+
+	h4{
+		font-size: medium;
 	}
 
 	.Mark {
@@ -97,5 +127,5 @@ html{
 	--base-type{
 
 	}
-}
+
 
