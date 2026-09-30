@@ -4,6 +4,7 @@
 	--color-brand:crimson;
     --color-accent: rgb(247, 156, 201);
 
+	--size-supersmall:0.6rem;
 	--size-small:1.2rem;
 	--size-medium:2rem;
 	--size-large:8rem;
@@ -21,6 +22,13 @@ html{
 	line-height: 2rem;
 }
 
+	
+	#articlemain,
+	#response {
+  	max-width: 55rem;
+  	margin-inline: auto;
+	}
+
 	body {
 		padding: var(--size-large);
 		background-color: var(--color-bg);
@@ -28,12 +36,6 @@ html{
 
 	section{
 		max-inline-size: 100ch;
-	}
-
-	#articlemain,
-	#response {
-  	max-width: 65rem;
-  	margin-inline: auto;
 	}
 
 	section > * + *{
@@ -81,20 +83,19 @@ html{
 	}
 
 	h1{
+		color:var(--color-fg);
 		font-size: 1rem;
 		line-height: 3rem;
-		font-weight: 100;
+		font: weight 200px;;
 	}
 
 	h2{
 		font-size: 4.5rem;
-		font-weight: 700;
-		color: crimson;
+		font-weight: 700
 	}
 
 	h3{
 		font-size: 3rem;
-		color: crimson;
 		margin-block: var(--size--large)var(--size-small);
 	}
 
@@ -127,18 +128,48 @@ html{
 
 	.highlights {
   		color:azure;
-  		background-color: rgb(103, 181, 254);
+  		background-color: transparent;
+		color: var(--color-fg);
+		border-inline-start: 0.25rem solid var(--color-accent);
 		padding: 0.4rem 1rem;
+		margin-block: var(--size-small);
+	}
 
-		em{
-			color: blue;
-			font-weight: 300;
-		}
+	.time{
+		font-weight: 400;
 	}
 
 
-	--base-type{
+	.corner-nav{
+		position: fixed;
+		/* stick at the same place */
+		inset-block-start:var(--size-small);
+		inset-inline-end: var(--size-supersmall);
+		margin: 0;
+		padding: 0;
 
 	}
+
+	.corner-nav ul {
+  	margin: 0;
+  	padding: 0;
+	}
+
+	/* three nav link (li) */
+	.corner-nav a{
+		display: block;
+		background-color: var(--color-accent);
+		color: var(--color-bg);
+		inline-size: max-content;
+		margin-inline-start: auto;
+		padding-inline: var(--size-small);
+		border-radius: var(--size-supersmall);
+	}
+
+	.corner-nav li+li{
+		margin-block-start: var(--size-supersmall)
+	}
+
+
 
 
