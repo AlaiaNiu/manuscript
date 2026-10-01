@@ -4,11 +4,11 @@
 	--color-brand: crimson;
 	--color-accent: rgb(247, 156, 201);
 
+	/* spacing */
 	--size-supersmall: 0.6rem;
 	--size-small: 1.2rem;
 	--size-medium: 2rem;
-	--size-large: 8rem;
-
+	--size-large: 4rem;
 
 	color: var(--color-fg);
 	background-color: var(--color-bg);
@@ -88,35 +88,36 @@ mark {
 
 h1,h2,h3,h4 {
 	font-family: var(--font-heading), sans-serif;
-	line-height: 6rem;
-	color: var(--color-brand)
+	line-height: 1.2;
+	color: var(--color-brand);
 }
 
 h1 {
 	color: var(--color-fg);
 	font-size: 1rem;
 	line-height: 3rem;
-	font: weight 200px;
-	;
+	font-weight: 200;
 }
 
 h2 {
 	font-size: 4.5rem;
-	font-weight: 700
+	font-weight: 700;
 }
 
 h3 {
 	font-size: 3rem;
-	margin-block: var(--size--large)var(--size-small);
+	font-weight: 500;
+	margin-block: var(--size-large) var(--size-small);
 }
 
 h4 {
-	font-size: var(--size-medium);
+	font-size: 1.75rem;
 }
 
 .pull-quote{
-	color: var(--color-brand);
+	color: var(--color-accent);
 	font-size: 2rem;
+	font-weight: 300;
 	 line-height: 1.2;
 	 margin-block: var(--size-medium);
 	margin-inline: 0;
@@ -130,6 +131,8 @@ h4 {
 	font-weight: 400;
 	gap: 1rem;
 	font-size: 2rem;
+	border-block: 2px solid var(--color-accent);
+	padding-block: var(--size-small);
 
 	& span {
 		margin-block-start: 0;
@@ -137,8 +140,8 @@ h4 {
 }
 
 .time li {
-	font-size: 1.1em;
-	color: var();
+	font-size: 1em;
+	color: var(--color-brand);
 
 }
 
@@ -152,13 +155,19 @@ em {
 	color: var(--color-accent);
 }
 
+
 .highlights {
 	color: azure;
 	background-color: transparent;
 	color: var(--color-fg);
-	border-inline-start: 0.25rem solid var(--color-accent);
-	padding: 0.4rem 1rem;
 	margin-block: var(--size-small);
+}
+
+footer{
+	margin-block-start: var(--size-small);
+	margin-block-end: var(--size-large);
+	padding-block-start: var(--size-small);
+	border-block-start: var(--color-accent);
 }
 
 
