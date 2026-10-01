@@ -80,9 +80,6 @@ mark {
 	margin-bottom: 1.5rem;
 }
 
-.pull-quote {
-	padding-inline-start: 5rem;
-}
 
 .response-title {
 	font-size: 3rem;
@@ -120,6 +117,9 @@ h4 {
 .pull-quote{
 	color: var(--color-brand);
 	font-size: 2rem;
+	 line-height: 1.2;
+	 margin-block: var(--size-medium);
+	margin-inline: 0;
 }
 
 
