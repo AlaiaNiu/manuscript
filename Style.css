@@ -108,7 +108,7 @@ h3 {
 	margin-block: var(--size-large) var(--size-small);
 }
 
-/* styling for the quotes */
+/* styling for the quotes  got some help and feedback from the school tutor */
 .pull-quote{
 	color: var(--color-accent);
 	font-size: 2rem;
@@ -116,6 +116,7 @@ h3 {
 	line-height: 1.2;
 	margin-block: var(--size-medium);
 	margin-inline: 0;
+	font-family: var(--font-heading); /* 衬线字体 */
 }
 
 .quote-1 {
@@ -149,6 +150,8 @@ h3 {
 	/* it was thought keep the origianl size and style */
 	text-transform: none;
 }
+
+/* second quote */
 .quote-2 {
 	display: flex;
 	flex-direction: column;
@@ -157,6 +160,7 @@ h3 {
 	font-weight: 400;
 }
 
+/* without chronology */
 .pq-22 {
 	align-self: flex-end;
 	margin-block: 2rem;
@@ -167,8 +171,66 @@ h3 {
 	text-decoration: line-through;
 }
 
+/* over causes */
 .pq-24 {
 	font-size: calc(var(--size-quote-basic) * 2);
+}
+
+/* third quote */
+.quote-3 {
+	display: grid;
+	grid-template-columns: max-content max-content;
+	column-gap: 0.3rem; /* 左右列之间的距离 */
+	row-gap: var(--size-medium);
+
+	color: var(--color-accent);
+	font-size: var(--size-quote-basic); /* 基础字号，目前是 2rem */
+	font-weight: 400; /* 普通字重 */
+	line-height: 1.2; /* 行高为字号的 1.2 倍 */
+}
+
+/* History without chronology */
+.pq-31 {
+	grid-column: 1 / -1; /* left and right */
+	grid-row: 1;
+}
+
+/* elevates the COMPLEX and the */
+.pq-32 {
+	grid-column: 1; /* on the left */
+	grid-row: 2;
+	padding-inline-start: 2rem; /* 向右缩进 */
+}
+
+/* COMPLEX */
+.pq-32-1 {
+	font-size: calc(var(--size-quote-basic) * 2);
+	text-transform: uppercase; /* 显示为大写 */
+	text-decoration: underline; /* 添加下划线 */
+	text-underline-offset: 0.15em; /* 下划线与文字的距离 */
+}
+
+/* 右边的 plural 列表 */
+.pq-33 {
+	grid-column: 2; /* 放在右列 */
+	grid-row: 2 / 4; /* 占据第二、第三行 */
+	display: flex; /* 排列列表项 */
+	flex-direction: column; /* 纵向排列 */
+	gap: var(--size-small);
+	padding-block-start: 1.9rem; /* move down */
+}
+
+/* plural */
+.pq-33 li {
+	text-decoration: underline;
+	text-underline-offset: 0.1em;
+}
+
+/* over the simple and the singular. */
+.pq-34 {
+	grid-column: 1;
+	grid-row: 3;
+	align-self: start;
 }
 
 .response-title {
@@ -183,7 +245,6 @@ h3 {
 	font-weight: 400;
 	gap: 1rem;
 	font-size: 2rem;
-	border-block: 2px solid var(--color-accent);
 	padding-block: var(--size-small);
 	padding-inline: 1rem;
 
