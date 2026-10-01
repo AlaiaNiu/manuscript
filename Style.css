@@ -108,10 +108,11 @@ h3 {
 	margin-block: var(--size-large) var(--size-small);
 }
 
-/* styling for the quotes  got some help and feedback from the school tutor */
+/* styling for the quotes  got some help and feedback from the school tutor
+but im not sure if this would be the best way to achieve the effect I want  */
 .pull-quote{
 	color: var(--color-accent);
-	font-size: 2rem;
+	font-size: var(--size-quote-basic);
 	font-weight: 500;
 	line-height: 1.2;
 	margin-block: var(--size-medium);
@@ -184,9 +185,9 @@ h3 {
 	row-gap: var(--size-medium);
 
 	color: var(--color-accent);
-	font-size: var(--size-quote-basic); /* 基础字号，目前是 2rem */
-	font-weight: 400; /* 普通字重 */
-	line-height: 1.2; /* 行高为字号的 1.2 倍 */
+	font-size: var(--size-quote-basic);
+	font-weight: 400;
+	line-height: 1.2;
 }
 
 /* History without chronology */
@@ -205,15 +206,15 @@ h3 {
 /* COMPLEX */
 .pq-32-1 {
 	font-size: calc(var(--size-quote-basic) * 2);
-	text-transform: uppercase; /* 显示为大写 */
+	text-transform: uppercase;
 	text-decoration: underline; /* 添加下划线 */
 	text-underline-offset: 0.15em; /* 下划线与文字的距离 */
 }
 
 /* 右边的 plural 列表 */
 .pq-33 {
-	grid-column: 2; /* 放在右列 */
-	grid-row: 2 / 4; /* 占据第二、第三行 */
+	grid-column: 2;
+	grid-row: 2 / 4;
 	display: flex;
 	flex-direction: column;
 	gap: var(--size-small);
