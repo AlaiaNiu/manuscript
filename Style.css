@@ -10,6 +10,10 @@
 	--size-medium: 2rem;
 	--size-large: 4rem;
 
+	/* letter */
+	--size-quote-basic:2rem;
+
+
 	color: var(--color-fg);
 	background-color: var(--color-bg);
 	--font-heading: 'source serif 4', serif;
@@ -80,13 +84,7 @@ mark {
 	margin-bottom: 1.5rem;
 }
 
-
-.response-title {
-	font-size: 3rem;
-	color: rgb(97, 94, 91);
-}
-
-h1,h2,h3,h4 {
+h1,h2,h3 {
 	font-family: var(--font-heading), sans-serif;
 	line-height: 1.2;
 	color: var(--color-brand);
@@ -110,19 +108,73 @@ h3 {
 	margin-block: var(--size-large) var(--size-small);
 }
 
-h4 {
-	font-size: 1.75rem;
-}
-
+/* styling for the quotes */
 .pull-quote{
 	color: var(--color-accent);
 	font-size: 2rem;
-	font-weight: 300;
-	 line-height: 1.2;
-	 margin-block: var(--size-medium);
+	font-weight: 500;
+	line-height: 1.2;
+	margin-block: var(--size-medium);
 	margin-inline: 0;
 }
 
+.quote-1 {
+	color: var(--color-accent);
+	margin-block: 3rem;
+}
+
+/*  line  */
+.pq-11, .pq-12-1 {
+	font-family: var(--font-heading);
+	font-size: var(--size-quote-basic);
+	line-height: 1.2;
+}
+
+/* quote 1 second style and big words */
+.pq-12 {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 1rem;
+
+	margin: 2.5rem 0 0;
+	font-family: var(--font-body);
+	font-size: calc(var(--size-quote-basic) * 2);
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.pq-12-1 {
+	/* it was thought keep the origianl size and style */
+	text-transform: none;
+}
+.quote-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	font-family: var(--font-heading);
+	font-weight: 400;
+}
+
+.pq-22 {
+	align-self: flex-end;
+	margin-block: 2rem;
+	color: rgb(97 94 91 / 50%);
+	font-family: var(--font-body);
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-decoration: line-through;
+}
+
+.pq-24 {
+	font-size: calc(var(--size-quote-basic) * 2);
+}
+
+.response-title {
+	font-size: 3rem;
+	color: rgb(97, 94, 91);
+}
 
 .time {
 	display: flex;
@@ -133,6 +185,7 @@ h4 {
 	font-size: 2rem;
 	border-block: 2px solid var(--color-accent);
 	padding-block: var(--size-small);
+	padding-inline: 1rem;
 
 	& span {
 		margin-block-start: 0;
